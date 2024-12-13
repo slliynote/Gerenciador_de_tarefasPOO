@@ -6,12 +6,12 @@ public class tarefa_simples extends Tarefas{
     private static Scanner scanner = new Scanner(System.in);
 
     public static String obtertarefa(){
-        System.out.print("escolha uma tarefa: ");
+        System.out.print(magenta +"escolha uma tarefa: ");
         return scanner.nextLine();
     }
 
     public static String obterstatus(){
-        System.out.print("escolha um status: ");
+        System.out.print(magenta + "escolha um status: ");
         return scanner.nextLine();
     }
 

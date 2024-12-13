@@ -7,22 +7,18 @@ public class tarefa_com_prazo extends Tarefas{
 
     private static Scanner scanner = new Scanner(System.in);
 
-    public static ArrayList<String> Tarefa = new ArrayList<>();
-    public static ArrayList<String> tarefaC= new ArrayList<>();
-    public static ArrayList<String> Status = new ArrayList<>();
-
     public static String obtertarefa(){
-        System.out.print("escolha uma tarefa: ");
+        System.out.print(magenta + "escolha uma tarefa: ");
         return scanner.nextLine();
     }
 
     public static String obterstatus(){
-        System.out.print("escolha um status: ");
+        System.out.print(magenta +"escolha um status: ");
         return scanner.nextLine();
     }
 
     public static String obterprazo(){
-        System.out.print("digite a data: ");
+        System.out.print(magenta + "digite a data: ");
         return scanner.nextLine();
     }
 
