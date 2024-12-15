@@ -1,32 +1,25 @@
 import tarefas.tarefa_simples;
-import tarefas.Tarefas;
 import tarefas.tarefa_com_prazo;
 import tarefas.mudar_status;
 import tarefas.remover_tarefa;
-
-import java.util.Scanner;
-public class main {
-
+import tarefas.menu;
 
 
     public static void main(String[] args) {
 
-
-
         int acao;
 
     tarefa_simples TarefaSimples = new tarefa_simples();
-    Tarefas tarefas = new Tarefas();
     tarefa_com_prazo prazo = new tarefa_com_prazo();
     mudar_status mudar = new mudar_status();
     remover_tarefa remove = new remover_tarefa();
 
 
- Tarefas.menuStatico();
+ menu.menuStatico();
 
     do{
-        Tarefas.menu();
-        acao = tarefas.obterAção();
+        menu.menu();
+        acao = menu.obterAção();
 
         switch (acao){
 
@@ -44,7 +37,7 @@ public class main {
                 break;
 
             case 3 :
-                 Tarefas.listar();
+                 menu.listar();
                 break;
 
             case 4 :
@@ -65,4 +58,4 @@ public class main {
     }
 
 
-}
+
